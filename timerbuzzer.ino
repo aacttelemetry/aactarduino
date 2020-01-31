@@ -2,8 +2,6 @@
 name:Stopwatch
 function: you can see the number increases by one per second on the 4-digit 7-segment display.
 ***********************************/
-//Email:support@sunfounder.com
-//Website:www.sunfounder.com
 
 /**************************************/
 #include <TimerOne.h>
