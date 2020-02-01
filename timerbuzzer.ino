@@ -6,9 +6,7 @@ function: you can see the number increases by one per second on the 4-digit 7-se
 /**************************************/
 #include <TimerOne.h>
 // constants for the buzzer
-const int buzzerPin = 0;
-float buzzerFrequency = 500;
-float buzzerDuration =  (100);
+const int buzzerPin = 13;
 //pin inputs for 4-digit 7-segment
 int a = 2;
 int b = 3;
@@ -293,14 +291,17 @@ void add()
         n = 700;
         }
    if (n == 10 || n==60 || n==100) {
-      tone(buzzerPin,buzzerFrequency,buzzerDuration);    
-  }
+      tone(buzzerPin, 1000);    
+      delay(1000);
+   }
      else{
          pinMode(buzzerPin, LOW);
       }
      if (n==760)
        {
       pinMode(d2 && d3 && d4, LOW);
-       }
+      tone(buzzerPin, 2000);
+       delay(1000)
+     }
 
 }
