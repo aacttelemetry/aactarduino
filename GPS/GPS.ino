@@ -1,10 +1,9 @@
-
 /*
  * Rui Santos 
  * Complete Project Details https://randomnerdtutorials.com
  */
  
-#include <TinyGPS.h> //Due to Pi limitations, this was imported as TinyGPS rather than TinyGPS++.
+#include <TinyGPS++.h> //Due to Pi limitations, this was imported as TinyGPS rather than TinyGPS++.
 #include <SoftwareSerial.h>
 
 static const int RXPin = 4, TXPin = 3;
